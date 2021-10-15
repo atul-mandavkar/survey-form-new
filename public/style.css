@@ -1,0 +1,17 @@
+body{
+  background-color: beige;
+  text-align: center;
+}
+#container{
+  background-color: black;
+  color: white;
+}
+h1{
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 2px 2px gray;
+  padding-top: 5px;
+}
+#subHeading{
+  
+}
