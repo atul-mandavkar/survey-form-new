@@ -1,9 +1,10 @@
 body{
   background-color: beige;
   text-align: center;
+  text-transform: capitalize;
 }
 #container{
-  background-color: black;
+  background-image: url("https://mortgagesingta.ca/wp-content/uploads/2019/12/Contact-form-background.jpg");
   color: white;
 }
 h1{
@@ -13,5 +14,57 @@ h1{
   padding-top: 5px;
 }
 #subHeading{
-  
+  font-style: italic;
+}
+#formContainer{
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: navy;
+  border: 1px solid black;
+  padding: 20px 0;
+}
+textarea{
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+}
+.sections{
+  width: 80%;
+  margin: auto;
+  line-height: 30px;
+  font-size: 28px;
+  padding: 5px;
+  text-align: left;
+}
+.tagHeading{
+  padding: 5px 0;
+}
+.tagInput{
+  width: 100%;
+  font-size: 24px;
+}
+input:invalid{
+  background-color: red;
+}
+input:invalid:required{
+  background: linear-gradient(to right, red, orange);
+}
+input:valid{
+  background-color: white;
+}
+.setInline{
+  display: inline;
+  width: 50px;
+  height: auto;
+  line-height: 36px;
+}
+#submitButton{
+  width: 80%;
+  height: 40px;
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  line-height: 100%;
+  box-shadow:  2px 2px inset yellowgreen, -2px -2px inset yellowgreen;
 }

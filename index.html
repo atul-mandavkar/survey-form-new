@@ -8,11 +8,88 @@
     <div id="container">
       <h1 id="heading">Survey form</h1>
       <h3 id="subHeading">Thank you for taking time to help us to improve the platform</h3>
-      <form>
-        <div class="formHeading">full name:-</div>
-        <label>
-          <input type="text" value="Johny Deep">
-        </label>
+      <form id="formContainer">
+        <div class="sections">
+          <label for="name-label">
+            <div class="tagHeading">full name:-</div>
+            <input type="text" placeholder="Johny Deep" class="tagInput" id="name-label" required>
+          </label>
+        </div>
+        <div class="sections">
+          <label for="email-label">
+            <div class="tagHeading">email id:-</div>
+            <input type="email" pattern="[a-zA-Z0-9]+@[a-zA-Z.-]+\.[a-z]{2,}$" placeholder="JohnyDeep@gmail.com" class="tagInput" id="email-label" required>
+          </label>
+        </div>
+        <div class="sections">
+          <label for="age-label">
+            <div class="tagHeading">age:-</div>
+            <input type="number" pattern="[0-9]" min="12" max="68" class="tagInput" id="age-label">
+          </label>
+        </div>
+        <div class="sections">
+          <label for="dropdown-label">
+            <div class="tagHeading">your current role:-</div>
+            <select name="role" class="tagInput" id="dropdown-label">
+              <option value="student">student</option>
+              <option value="full-time job">full-time job</option>
+              <option value="part-time job">part-time job</option>
+              <option value="not to say">not to say</option>
+            </select>
+          </label>
+        </div>
+        <div class="sections">
+          <p>Select your gender:-</p>
+          <label for="radio-male-label">
+            <input type="radio" value="male" name="gender" class="tagInput setInline" id="radio-male-label" checked>
+            <div class="tagHeading setInline">male</div>
+          </label><br/>
+          <label for="radio-female-label">
+            <input type="radio" value="female" name="gender" class="tagInput setInline" id="radio-female-label">
+            <div class="tagHeading setInline">female</div>
+          </label>
+        </div>
+        <div class="sections">
+          <p>Would you recomend our site to your friends?</p>
+          <label for="radio-definately-label">
+            <input type="radio" value="definately" name="recomend" class="tagInput setInline" id="radio-definately-label">
+            <div class="tagHeading setInline">definately</div>
+          </label><br/>
+          <label for="radio-maybe-label">
+            <input type="radio" value="maybe" name="recomend"  class="tagInput setInline" id="radio-maybe-label">
+            <div class="tagHeading setInline">maybe</div>
+          </label><br/>
+          <label for="radio-notSure-label">
+            <input type="radio" value="notSure" name="recomend" class="tagInput setInline" id="radio-notSure-label">
+            <div class="tagHeading setInline">not sure</div>
+          </label>
+        </div>
+        <div class="sections">
+          <p>What would you like to see improved?</p>
+          <label for="check1">
+            <input type="checkbox" value="page design" class="tagInput setInline" id="check1">
+            <div class="tagHeading setInline">page design</div>
+          </label><br/>
+          <label for="check2">
+            <input type="checkbox" value="form design" class="tagInput setInline" id="check2">
+            <div class="tagHeading setInline">form design</div>
+          </label><br/>
+          <label for="check3">
+            <input type="checkbox" value="font design" class="tagInput setInline" id="check3">
+            <div class="tagHeading setInline">font design</div>
+          </label><br/>
+          <label for="check4">
+            <input type="checkbox" value="font style" class="tagInput setInline" id="check4">
+            <div class="tagHeading setInline">font style</div>
+          </label><br/>
+        </div>
+        <div class="sections">
+          <label for="comment">
+            <div class="tagHeading">Any additional comment or suggestion?</div>
+            <textarea class="tagInput" id="comment" placeholder="Write comment here:-"></textarea>
+          </label>
+        </div>
+        <button type="submit" value="submit" form="formContainer" id="submitButton">submit</button>
       </form>
     </div>
   </body>
